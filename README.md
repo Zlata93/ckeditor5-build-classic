@@ -6,7 +6,7 @@ CKEditor 5 custom editor build with fonts and without images
 First, install the build from npm:
 
 ```bash
-npm install --save @ckeditor/ckeditor5-build-with-fonts
+npm install --save ckeditor5-build-reshas
 ```
 
 And use it in your website:
