@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-reshas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The custom build of CKEditor 5 with font plugin and without image and media plugin",
   "keywords": [
     "ckeditor5-build",
