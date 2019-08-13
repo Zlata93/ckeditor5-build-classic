@@ -8,6 +8,12 @@ import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classicedi
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+import Image from '@ckeditor/ckeditor5-image/src/image';
+import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
+import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
+import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
@@ -42,7 +48,13 @@ CustomEditor.builtinPlugins = [
 	Underline,
 	BlockQuote,
 	CKFinder,
+	EasyImage,
 	Heading,
+	Image,
+	ImageCaption,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload,
 	Link,
 	List,
 	Paragraph,
@@ -70,6 +82,7 @@ CustomEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'imageUpload',
 			'blockQuote',
 			'insertTable',
 			'undo',
@@ -80,6 +93,14 @@ CustomEditor.defaultConfig = {
 			'fontFamily',
 			'subscript',
 			'superscript'
+		]
+	},
+	image: {
+		toolbar: [
+			'imageStyle:full',
+			'imageStyle:side',
+			'|',
+			'imageTextAlternative'
 		]
 	},
 	table: {
